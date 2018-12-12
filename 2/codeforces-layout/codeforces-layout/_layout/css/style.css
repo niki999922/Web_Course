@@ -1,0 +1,324 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --border-color_table : rgba(223, 223, 223, 0.99);
+    --color-search : rgba(245, 245, 245, 0.89);
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body header nav form.search{
+    border: 1px solid var(--border-color);
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+body header nav .search input {
+    padding-left: 20px;
+    border: 1px;
+    background: var(--color-search) url("../img/search-16x16.png") 2px 2px no-repeat;
+}
+
+.middle {
+    margin-top: 1rem;
+    //overflow: auto;
+    /*SCROLLING*/
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main div table {
+    width: 100%;
+}
+
+main .datatable .caption {
+    border-bottom: 0 solid var(--border-color);
+    padding: 0.25rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: rgba(223, 223, 223, 0.99);
+}
+
+main div table {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px 20px;
+    border: 1px solid var(--border-color_table);
+}
+
+main table tbody tr:nth-child(2n+1) {
+    background-color: rgba(245, 245, 245, 0.89);
+}
+
+main article {
+    padding-top: 15px;
+}
+
+main article .title {
+    font-weight: bold;
+    font-size: large;
+    color: var(--caption-color);
+}
+
+main article .information {
+    padding-top: 5px;
+    font-size: small;
+    color : grey;
+}
+
+main article .body {
+    padding-left: 14px;
+    border-left: 4px solid LightGrey;
+    font-size: medium;
+}
+
+main article .attachment {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+main article .attachment li {
+    padding-left: 25px;
+    background: url("../img/paperclip-16x16.png") 2px 2px no-repeat;
+}
+
+main article .footer {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 4px;
+    position: relative;
+}
+
+main article .footer .left {
+    font-weight: bold;
+    font-size: large;
+    color: rgba(87,180,28,1);
+}
+
+main article .footer .left .positive-score {
+    vertical-align: top;
+}
+
+main article .footer .right {
+    position: absolute;
+    float: right;
+    top: 7px;
+    right: 8px;
+}
+
+main .login-form-box {
+    margin: 1rem auto;
+    width : 28rem;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+main .login-form-box .header {
+    padding: 5px;
+    font-weight: bold;
+    font-size: medium;
+    color: var(--caption-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+main .login-form-box .body {
+    padding: 2px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main .login-form-box .body .field {
+    margin-right: 3rem;
+    margin-left: 25px;
+    padding: 2px;
+    position: relative;
+}
+
+main .login-form-box .body form .field .name{
+    margin-right: 15rem;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    //float: right;
+    text-align: right;
+}
+
+main .login-form-box .body form .field .value #handleOrEmail{
+    position: absolute;
+    float: right;
+    right: 12px;
+    top: 15px;
+}
+
+main .login-form-box .body form .field .value #password{
+    position: absolute;
+    float: right;
+    right: 12px;
+    top: 15px;
+}
+
+main .login-form-box .body form .field .error {
+    margin-left: 40%;
+    text-align: left;
+    color : red;
+    font-size: 13px;
+}
+
+main .login-form-box .body form .checkbox-field {
+    margin-top: 60px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+
+}
+
+main .login-form-box .body form .button-field {
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+main .login-form-box .body form .button-field input {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .login-form-box .body form .links {
+    text-align: right;
+    font-size: 14px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+main .login-form-box .footer {
+    font-size: 14px;
+    text-align: right;
+    padding: 3px 3px 5px;
+}
+
+main .login-form-box .footer a {
+    padding-left: 7px;
+}

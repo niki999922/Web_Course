@@ -1,0 +1,55 @@
+main article {
+    padding-top: 15px;
+}
+
+main article .title {
+    font-weight: bold;
+    font-size: large;
+    color: var(--caption-color);
+}
+
+main article .information {
+    padding-top: 5px;
+    font-size: small;
+    color : grey;
+}
+
+main article .body {
+    padding-left: 14px;
+    border-left: 4px solid LightGrey;
+    font-size: medium;
+}
+
+main article .attachment {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+main article .attachment li {
+    padding-left: 25px;
+    background: url("../img/paperclip-16x16.png") 2px 2px no-repeat;
+}
+
+main article .footer {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 4px;
+    position: relative;
+}
+
+main article .footer .left {
+    font-weight: bold;
+    font-size: large;
+    color: rgba(87,180,28,1);
+}
+
+main article .footer .left .positive-score {
+    vertical-align: top;
+}
+
+main article .footer .right {
+    position: absolute;
+    float: right;
+    top: 7px;
+    right: 8px;
+}
